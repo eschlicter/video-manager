@@ -1,0 +1,19 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    content: " ";
+    clear: both;
+}
+
+.col {
+    width: 25%;
+    float: left;
+}
+
+/*Util*/
+.text-center {
+    text-align: center;
+}
