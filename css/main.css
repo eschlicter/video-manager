@@ -1,19 +1,39 @@
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .row {
-    content: " ";
-    clear: both;
+  content: " ";
+  clear: both;
 }
 
 .col {
-    width: 25%;
-    float: left;
+  width: 80%;
+  margin: 0 auto;
+  float: left;
 }
 
 /*Util*/
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+
+.bg-color-gray {
+  background-color: lightgray;
+}
+
+/*Media Queries*/
+@media all and (min-width: 1199px) {
+}
+@media all and (min-width: 991px) {
+}
+@media all and (min-width: 768px) {
+  .col {
+    width: 25%;
+    float: left;
+    clear: none;
+  }
+}
+@media all and (max-width: 575px) {
 }
