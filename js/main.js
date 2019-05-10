@@ -1,4 +1,5 @@
 var data = [];
+var grid = document.querySelector('#gridMain');
 
 fetch("https://5cd4377db231210014e3d67b.mockapi.io/api/video")
   .then(function(response) {
@@ -6,8 +7,9 @@ fetch("https://5cd4377db231210014e3d67b.mockapi.io/api/video")
   })
   .then(function(myJson) {
     data = myJson;
-    data.targetId = "#gridMain";
-    updateUI([createVideoCard], [data]);
+    rivets.bind(grid, {videos: data});
+
+    
 
     var searchBar = document.querySelector("#searchVideos");
     var videos = document.querySelectorAll(".video-card");
@@ -29,3 +31,5 @@ fetch("https://5cd4377db231210014e3d67b.mockapi.io/api/video")
       }
     });
   });
+
+  //var searchBtn = document.querySelector("#searchVideos");

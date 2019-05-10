@@ -1,18 +1,3 @@
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.row {
-  content: " ";
-  clear: both;
-}
-
-.col {
-  width: 80%;
-  margin: 0 auto;
-  float: left;
-}
 
 /*Util*/
 .text-center {
@@ -20,20 +5,26 @@
 }
 
 .bg-color-gray {
-  background-color: lightgray;
+  background-color: #f7f4f4;
 }
 
-/*Media Queries*/
-@media all and (min-width: 1199px) {
+/*Media First Queries*/
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .column, .columns {
+        margin-left: 0%;
+    }
 }
-@media all and (min-width: 991px) {
-}
-@media all and (min-width: 768px) {
-  .col {
-    width: 25%;
-    float: left;
-    clear: none;
-  }
-}
-@media all and (max-width: 575px) {
-}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

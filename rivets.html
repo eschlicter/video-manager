@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Video Manager</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <section id="auction">
+        <h3>{ auction.product.name }</h3>
+    </section>
+
+    <div class="container" id="grid">
+        <ul>
+            <li rv-each-item="products">
+                Name: {item.name}
+            </li>
+            <li> Price:{item.price}</li>
+        </ul>
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rivets/0.9.6/rivets.bundled.min.js"></script>
+        <script src="js/rivets-test.js"></script>
+    </body>
+</html>
