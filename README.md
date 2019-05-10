@@ -1,6 +1,6 @@
 ## Media Manager
 
-####Created using: 
+Created using: 
 - rivets
 - skeleton.css
 - javascript
